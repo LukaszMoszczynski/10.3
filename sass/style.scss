@@ -1,0 +1,57 @@
+.img-1 {background-image: url(../images/armors.jpeg);}
+.img-2 {background-image: url(../images/knight-armor-helmet-weapons.jpeg);}
+.img-3 {background-image: url(../images/medieval-helmet.jpg);}
+.img-4 {background-image: url(../images/middle-ages.jpg);}
+.img-5 {background-image: url(../images/plate.jpeg);}
+.img-6 {background-image: url(../images/sword.jpg);}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel {
+	width: 800px;	
+	height: 600px;
+	border: solid black 2px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	ul {
+		margin: 0;
+		padding: 0; 
+		width: 4800px;
+		li {
+			height: 600px;
+			width: 800px;
+			background-size: cover;
+			background-position: center;
+			list-style-type: none;	
+			float: left;
+		}
+	}
+	.fa {
+		position: absolute;
+		color: #FFF;
+		top: 50%;
+		font-size: 50px;
+		cursor: pointer;
+		text-shadow: 2px 2px 4px #000000;
+		&:hover {
+			opacity: 0.7;
+			transform: scale(1.1);
+			background-color: rgba(0,0,0,0.8);
+		}
+	}
+	.fa-chevron-left {	
+		left: 10px;		
+	}
+	.fa-chevron-right {
+		right: 10px;
+	}
+}
+
+
+
+
