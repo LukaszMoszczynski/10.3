@@ -23,15 +23,9 @@
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel {
@@ -43,13 +37,14 @@
   position: relative;
 }
 
-.carousel ul {
+.carousel .images {
   margin: 0;
   padding: 0;
   width: 4800px;
+  margin-left: -800px;
 }
 
-.carousel ul li {
+.carousel .images li {
   height: 600px;
   width: 800px;
   background-size: cover;
@@ -69,8 +64,7 @@
 
 .carousel .fa:hover {
   opacity: 0.7;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -81,4 +75,25 @@
 .carousel .fa-chevron-right {
   right: 10px;
 }
+
+.carousel .dots {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+}
+
+.carousel .dots li {
+  background-color: #FFF;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.carousel .dots .active {
+  background-color: black;
+}
+
 /*# sourceMappingURL=style.css.map */
